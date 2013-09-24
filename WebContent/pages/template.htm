@@ -1,0 +1,53 @@
+<HTML>
+    <HEAD>
+        <TITLE>$hd_title</TITLE>
+        $imports
+    </HEAD>
+        
+    
+    <BODY>
+    	$form.startTag()
+    		$form.fields.showblog
+            <TABLE class="$tablestype" width="100%">
+                <TR>
+                    <TD colspan="3">
+                        <h1>$hd_title</h1>
+                        $hd_desc
+                    </TD>
+                </TR>
+                <TR>
+                    <TD colspan="3" align="right">
+                        管理者用ログイン：$form.fields.log_password $form.fields.log_ok $form.fields.log_off $form.fields.selstyle
+                    </TD>
+                </TR>
+                <TR>
+                    <TD colspan="2" rowspan="4" valign="top" width="100%">
+                        #parse($path)
+                    </TD>
+                    <TD height="58">
+                        $cal_prevmonth $cal_month $cal_nextmonth <br>
+                        $cal_calendar
+                    </TD>
+                </TR>
+                <TR>
+                    <TD height="40">
+                        プロフィール<br>
+                        名前　：$pro_name<BR>
+                        年齢　：$pro_age<br>
+                        メール：$pro_email<br>
+                        $form.fields.pro_edit
+                        <hr>
+                        プロフィール：<br>
+                        $pro_body
+                        
+                    </TD>
+                </TR>
+                <TR>
+                    <TD height="464" valign="top">
+                        $lst_lately
+                    </TD>
+                </TR>
+            </TABLE>
+     	$form.endTag()
+    </BODY>
+</HTML>

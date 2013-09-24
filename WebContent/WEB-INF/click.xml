@@ -1,0 +1,13 @@
+<click-app charset="Shift_JIS" locale="ja">
+	<pages>
+		<page path="pages/main.htm" classname="jp.arcanum.clicklog.page.MainPage" />
+		<page path="pages/edit_profile.htm" classname="jp.arcanum.clicklog.page.EditProfilePage" />
+		<page path="pages/edit_blog.htm" classname="jp.arcanum.clicklog.page.EditBlogPage" />
+		<page path="pages/show_blog.htm" classname="jp.arcanum.clicklog.page.ShowBlogPage" />
+
+		<excludes pattern="pages/*.htm"/>
+	</pages>
+
+    <mode value="debug"/>
+
+</click-app>
